@@ -21,7 +21,8 @@ const Diamonds = () => {
     return (
         <div className='diamonds'>
             {diamonds.map((diamond) => {
-                return <Diamond key={diamond.id} diamond={diamond} />
+                return ( <Diamond key={diamond.id} diamond={diamond} />)
+               
             })}
         </div>
     );

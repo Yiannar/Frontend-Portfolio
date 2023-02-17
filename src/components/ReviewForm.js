@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './ReviewForm.css'
 
 function ReviewForm(props) {
   const { id } = useParams();
@@ -79,9 +80,9 @@ function ReviewForm(props) {
           onChange={handleTextChange}
         />
 
-        <br />
+        <br className="break"/>
 
-        <input type="submit" />
+        <input className='button'type="submit" />
       </form>
     </div>
   );

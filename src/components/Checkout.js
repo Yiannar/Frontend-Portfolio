@@ -40,7 +40,6 @@ function Checkout({cart}) {
     
       return (
         <div>
-            <h2>Checkout</h2>
             <form onSubmit={handleSubmit}>
                 <label>First Name</label>
                 <input 
@@ -77,7 +76,7 @@ function Checkout({cart}) {
                 value={userInput.zipCode}
                 onChange ={handleChange}/>
                 
-                <button>submit</button>
+                <button className="button">submit</button>
             </form>
         </div>
     );

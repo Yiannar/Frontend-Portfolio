@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import'./DiamondForm.css'
 const API = process.env.REACT_APP_API_URL;
 
 function DiamondNewForm (){
@@ -67,15 +68,15 @@ return (
             onChange={handleTextChange}
             placeholder="1.04"
             required/>
-               <label htmlFor='color'>Color:</label>
+            <label htmlFor='color'>Color:</label>
             <input
             id='color'
             type= 'text'
-            value={diamond.carat}
+            value={diamond.color}
             onChange={handleTextChange}
             placeholder="D"
             required/>
-               <label htmlFor='cut'>Cut:</label>
+            <label htmlFor='cut'>Cut:</label>
             <input
             id='cut'
             type= 'text'

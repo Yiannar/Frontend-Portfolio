@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import AboutDev from "./pages/AboutDev";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import '../src/App.css'
 
 
 function App() {

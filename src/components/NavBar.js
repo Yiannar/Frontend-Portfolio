@@ -11,8 +11,8 @@ const NavBar = () => {
             <ul>
                 <li><Link to='/diamonds' className="listofdiamonds">Diamonds</Link> </li>
                 <li><Link to="/diamonds/new" className="newDiamond">Custom Diamond</Link> </li>
-                <li><Link to="/diamonds/cart" className="cart">Cart</Link> </li>
-                <li><Link to="/diamonds/checkout" className="checkout">Checkout</Link> </li>
+                {/* <li><Link to="/diamonds/cart" className="cart">Cart</Link> </li>
+                <li><Link to="/diamonds/checkout" className="checkout">Checkout</Link> </li> */}
                 <li><Link to="/diamonds/AboutDev" className="aboutDev">About Dev</Link> </li>
              
             </ul>

@@ -1,16 +1,18 @@
 import react from "react";
 import { Link } from "react-router-dom";
+import './Diamond.css'
 
 
 
 const Diamond =({diamond})=>{
     return(
-        <section>
+        <section className="diamonds">
+            <img src={diamond.image} alt='diamonds'></img>
             <Link to={`/diamonds/${diamond.id}`}>
-            <h1>{diamond.shape}</h1>
+            <h1 className="shape">{diamond.shape}</h1>
             </Link>
 
-            {/* <img className="diamond-img" src={diamond.image} alt='Diamond-Image'> </img> */}
+        
         </section>
     )
 };
