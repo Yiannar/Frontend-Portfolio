@@ -1,4 +1,8 @@
-# Hello
+# DEPLOYED SITES
+
+FRONTEND - (https://effortless-figolla-afe358.netlify.app/diamonds)
+
+BACKEND - (https://backend-portfolioproject.onrender.com)
 
 # Getting Started with Create React App
 

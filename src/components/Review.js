@@ -23,7 +23,7 @@ function Review({ review, handleDelete, handleSubmit }) {
           <h4>
             {title} <span>{rating}</span>
           </h4>
-          <h3>{reviewer}</h3>
+          <h1>{reviewer}</h1>
           <p>{content}</p>
           <button onClick={() => handleDelete(id)}>delete</button>
         </>

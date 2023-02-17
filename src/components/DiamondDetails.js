@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import {Link, useParams, useNavigate} from 'react-router-dom'
 import Reviews from ".//Reviews"
+import './Details.css'
 const API = process.env.REACT_APP_API_URL
 
 function DiamondDetails(){
@@ -44,7 +45,7 @@ return(
     <article>
      {diamond[0]&&    
      <div>
-            <h1>{diamond[0].shape}</h1>
+            <h1 className="diamondShape">{diamond[0].shape}</h1>
             <img className="diamond-pic" src={diamond[0].image} alt='diamondpic'/>
             <h2>{diamond?.carat}</h2>
             <table>
