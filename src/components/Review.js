@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import ReviewForm from './ReviewForms';
+import ReviewForm from './ReviewForm';
 
 function Review({ review, handleDelete, handleSubmit }) {
     const [viewEditForm, toggleEditForm] = useState(false);
@@ -19,17 +19,18 @@ function Review({ review, handleDelete, handleSubmit }) {
  toggleView={toggleView}
  handleSubmit={handleSubmit}/>
  ) : (
- <div>
- <h4>
- {review.title} <span>{review.rating}</span>
- </h4>
- <h5>{review.reviewer}</h5>
- <p>{review.content}</p>
- </div>
- )
-}
-      </div>
-    );
+  <>
+          <h4>
+            {title} <span>{rating}</span>
+          </h4>
+          <h5>{reviewer}</h5>
+          <p>{content}</p>
+          <button onClick={() => handleDelete(id)}>delete</button>
+        </>
+      )}
+      <button onClick={toggleView}>edit this review</button>
+    </div>
+  );
   }
   
   export default Review;

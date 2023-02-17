@@ -1,10 +1,11 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import {Link, useParams, useNavigate} from 'react-router-dom'
+import Reviews from ".//Reviews"
 const API = process.env.REACT_APP_API_URL
 
 function DiamondDetails(){
-
+ 
 const [diamond, setDiamond] = useState({})
 const { id } = useParams()
 let navigate = useNavigate()
@@ -37,7 +38,9 @@ useEffect(()=>{
 //     return<h1>Loading</h1>
 // }
 
+
 return(
+    <>
     <article>
      {diamond[0]&&    
      <div>
@@ -89,6 +92,8 @@ return(
             </div>
         </div>}
     </article>
+    <Reviews/>
+    </>
 )
 
 }

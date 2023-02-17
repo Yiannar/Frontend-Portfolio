@@ -45,7 +45,7 @@ return (
             id='shape'
             value={diamond.shape}
             type='text'
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="Princess"
             required/>
             <label htmlFor='url'>URL:</label>
@@ -55,7 +55,7 @@ return (
             type='text'
             pattern='http[s]*://.+'
             required
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="https://"
             />
             <label htmlFor='carat'>Carat:</label>
@@ -64,7 +64,7 @@ return (
             type= 'number'
             min='0'
             value={diamond.carat}
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="1.04"
             required/>
                <label htmlFor='color'>Color:</label>
@@ -72,7 +72,7 @@ return (
             id='color'
             type= 'text'
             value={diamond.carat}
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="D"
             required/>
                <label htmlFor='cut'>Cut:</label>
@@ -80,7 +80,7 @@ return (
             id='cut'
             type= 'text'
             value={diamond.cut}
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="Excellent"
             required/>
             <label htmlFor='price'>Price:</label>
@@ -89,7 +89,7 @@ return (
             type= 'number'
             min='0'
             value={diamond.price}
-            onchange={handleTextChange}
+            onChange={handleTextChange}
             placeholder="32,000"
             required/>
              <label htmlFor="is_reported">Reported:</label>

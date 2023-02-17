@@ -7,6 +7,8 @@ import NavBar from "./components/NavBar";
 import New from "./pages/New";
 import Index from "./pages/Index";
 import AboutDev from "./pages/AboutDev";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/diamonds/:id" element={<Show />} />
           <Route path="/diamonds/:id/edit" element={<Edit />} />
           <Route path="/diamonds/AboutDev" element={<AboutDev/>}/>
+          <Route path="/diamonds/cart" element={<CartPage/>}/>
+          <Route path="/diamonds/checkout" element={<CheckoutPage/>}/>
           <Route path="*" elememt={<FourOFour />} />
         </Routes>
       </Router>
