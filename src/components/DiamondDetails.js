@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import {Link, useParams, useNavigate} from 'react-router-dom'
 import Reviews from ".//Reviews"
+import ReviewForm from './ReviewForm'
 import './Details.css'
 const API = process.env.REACT_APP_API_URL
 
@@ -26,7 +27,7 @@ useEffect(()=>{
     axios
     .get(`${API}/diamonds/${id}`)
     .then((response)=>{
-        console.log(response.data)
+      
         setDiamond(response.data)
     })
     .catch((c)=>{
@@ -37,6 +38,13 @@ useEffect(()=>{
 
 // if (!diamond[0].carat){
 //     return<h1>Loading</h1>
+// }
+
+// handleSubmit for reviews pass as a prop to reviewform component 
+// const handleSubmit= ()=>{
+//     axios 
+//     .post(`${API}/reviews`, )
+//     .then()
 // }
 
 
@@ -87,9 +95,8 @@ return(
                 <Link to={`/diamonds/${id}/edit`}>
                     <button>Edit</button>
                 </Link>
-            </div>
-            <div>
                 <button className="delete" onClick={deleteDiamond}>Delete</button>
+                {/* <ReviewForm /> */}
             </div>
         </div>}
     </article>

@@ -22,9 +22,9 @@ const addDiamond =(newDiamond)=>{
     axios
     .post(`${API}/diamonds`, newDiamond)
     .then(
-        ()=>{
+        ()=>
             navigate(`/diamonds`)
-        }, (error)=> console.error(error))
+        )
         .catch((c)=> console.warn('catch',c))
 }
 

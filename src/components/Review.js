@@ -3,7 +3,7 @@ import ReviewForm from './ReviewForm';
 
 function Review({ review, handleDelete, handleSubmit }) {
     const [viewEditForm, toggleEditForm] = useState(false);
-    
+    // console.log(review)
     const toggleView = () => {
         toggleEditForm(!viewEditForm);
     };
@@ -20,15 +20,16 @@ function Review({ review, handleDelete, handleSubmit }) {
  handleSubmit={handleSubmit}/>
  ) : (
   <>
+          <h1>Reviewer:{reviewer}</h1>
           <h4>
-            {title} <span>{rating}</span>
+            Subject:{title} 
           </h4>
-          <h1>{reviewer}</h1>
+          <span>Rating: {rating}</span>
           <p>{content}</p>
-          <button onClick={() => handleDelete(id)}>delete</button>
+          <button className='delete-button'onClick={() => handleDelete(id)}>delete</button>
         </>
       )}
-      <button onClick={toggleView}>edit this review</button>
+      <button onClick={toggleView}>Edit this Review</button>
     </div>
   );
   }

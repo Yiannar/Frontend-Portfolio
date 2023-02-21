@@ -39,7 +39,8 @@ function ReviewForm(props) {
     });
   };
   return (
-    <div className="Edit">
+    <article className="reviewform">
+      <div className="Edit">
       {props.children}
       <form onSubmit={handleSubmit}>
         <label htmlFor="reviewer">Name:</label>
@@ -85,6 +86,7 @@ function ReviewForm(props) {
         <input className='button'type="submit" />
       </form>
     </div>
+    </article>
   );
 }
 

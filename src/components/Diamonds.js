@@ -12,7 +12,7 @@ const Diamonds = () => {
         axios
         .get(`${API}/diamonds`)
         .then((res)=>{
-            console.log(res.data)
+            // console.log(res.data)
             setDiamonds(res.data);
         })
         .catch((c) => console.warn("catch", c))

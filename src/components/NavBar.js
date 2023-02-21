@@ -8,12 +8,12 @@ const NavBar = () => {
     return (
         <nav className="nav">
             <Link to="/" className="Diamond-Site">Diamond</Link>
-            <ul>
-                <li><Link to='/diamonds' className="listofdiamonds">Diamonds</Link> </li>
-                <li><Link to="/diamonds/new" className="newDiamond">Custom Diamond</Link> </li>
-                {/* <li><Link to="/diamonds/cart" className="cart">Cart</Link> </li>
-                <li><Link to="/diamonds/checkout" className="checkout">Checkout</Link> </li> */}
+            <ul className="navUL">
                 <li><Link to="/diamonds/AboutDev" className="aboutDev">About Dev</Link> </li>
+                <li><Link to="/diamonds/new" className="newDiamond">Custom Diamond</Link> </li>
+                <li className="navLI"><Link to='/diamonds' className="listofdiamonds">Diamonds</Link> </li>
+                <li><Link to='/diamonds/Info' className="info">Info</Link></li>
+            
              
             </ul>
         </nav>

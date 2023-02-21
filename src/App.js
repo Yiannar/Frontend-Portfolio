@@ -7,8 +7,7 @@ import NavBar from "./components/NavBar";
 import New from "./pages/New";
 import Index from "./pages/Index";
 import AboutDev from "./pages/AboutDev";
-import CartPage from "./pages/CartPage";
-import CheckoutPage from "./pages/CheckoutPage";
+import Info from "./pages/Info";
 import '../src/App.css'
 
 
@@ -23,9 +22,8 @@ function App() {
           <Route path="/diamonds/new" element={<New />} />
           <Route path="/diamonds/:id" element={<Show />} />
           <Route path="/diamonds/:id/edit" element={<Edit />} />
+          <Route path="/diamonds/Info" element={<Info/>}/>
           <Route path="/diamonds/AboutDev" element={<AboutDev/>}/>
-          <Route path="/diamonds/cart" element={<CartPage/>}/>
-          <Route path="/diamonds/checkout" element={<CheckoutPage/>}/>
           <Route path="*" elememt={<FourOFour />} />
         </Routes>
       </Router>

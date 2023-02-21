@@ -25,9 +25,9 @@ const updateDiamond =(updatedDiamond)=>{
     .put(`${API}/diamonds/${id}`, updatedDiamond)
     .then(
         ()=>{
-            console.log('hello', id)
+            console.log(updatedDiamond)
             navigate(`/diamonds/${id}`)
-        }, (error)=> console.error(error))
+        })
         .catch((c)=> console.warn('catch',c))
 }
 
@@ -39,7 +39,11 @@ useEffect(()=>{
     axios
     .get(`${API}/diamonds/${id}`)
     .then(
-        (res)=> setDiamond(res.data),
+        (res)=> {
+            console.log(res.data)
+            setDiamond(res.data[0])
+        },
+       
         (error) => navigate(`/not-found`)
     )
 }, [id, navigate])
@@ -82,7 +86,7 @@ return (
             <input
             id='color'
             type= 'text'
-            value={diamond.carat}
+            value={diamond.color}
             onChange={handleTextChange}
             placeholder="D"
             required/>

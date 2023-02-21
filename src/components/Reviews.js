@@ -55,16 +55,13 @@ const handleAdd = (newReview) => {
   };
   useEffect(() => {
     axios.get(`${API}/diamonds/${id}/reviews`).then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       setReviews(response.data);
     });
   }, [id, API]);
   return (
     <section className="Reviews">
       <h2>Reviews</h2>
-      <ReviewForm handleSubmit={handleAdd}>
-        <h3>Add a New Review</h3>
-      </ReviewForm>
       {reviews.map((review) => (
         <Review 
         key={review.id} 

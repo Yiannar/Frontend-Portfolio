@@ -7,11 +7,12 @@ import './Diamond.css'
 const Diamond =({diamond})=>{
     return(
         <section className="diamonds">
-            <img src={diamond.image} alt='diamonds'></img>
-            <Link to={`/diamonds/${diamond.id}`}>
+             <Link to={`/diamonds/${diamond.id}`}>
             <h1 className="shape">{diamond.shape}</h1>
             </Link>
 
+            <img src={diamond.image} alt='diamonds'></img>
+           
         
         </section>
     )
