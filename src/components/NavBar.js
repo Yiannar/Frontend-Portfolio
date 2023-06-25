@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 // import Diamondlogo from '.../Assets/Diamondlogo'
-import '../Css/NavBar'
+import '../Css/navigationBar'
 import Show from "../pages/Show";
 
 const NavBar = () => {

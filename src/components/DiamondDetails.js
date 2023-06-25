@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import {Link, useParams, useNavigate} from 'react-router-dom'
 import Reviews from ".//Reviews"
 import ReviewForm from './ReviewForm'
-import '../Css/Details'
+import '../Css/diamondDetails'
 const API = process.env.REACT_APP_API_URL
 
 function DiamondDetails(){
