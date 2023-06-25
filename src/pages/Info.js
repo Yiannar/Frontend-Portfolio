@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/diamondInfo'
+
 
 const Info = () => {
     return (

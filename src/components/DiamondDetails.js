@@ -3,7 +3,8 @@ import { useState, useEffect } from "react"
 import {Link, useParams, useNavigate} from 'react-router-dom'
 import Reviews from ".//Reviews"
 import ReviewForm from './ReviewForm'
-import '../Css/diamondDetails'
+
+
 const API = process.env.REACT_APP_API_URL
 
 function DiamondDetails(){
@@ -50,7 +51,7 @@ useEffect(()=>{
 
 return(
     <>
-    <article>
+    <div>
      {diamond[0]&&    
      <div>
             <h1 className="diamondShape">{diamond[0].shape}</h1>
@@ -99,7 +100,7 @@ return(
                 {/* <ReviewForm /> */}
             </div>
         </div>}
-    </article>
+    </div>
     <Reviews/>
     </>
 )
