@@ -1,6 +1,6 @@
 import React from 'react';
 import Dev from '../Assets/Dev.png'
-import './AboutDev.css'
+import '../Css/AboutDev'
 const AboutDev = () => {
     return (
         <div>

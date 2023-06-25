@@ -1,4 +1,4 @@
-.diamonds{
+/* .diamonds{
     display: grid;
     grid-template-rows: min-content;
     text-shadow: 2px 2px 2px white;
@@ -45,4 +45,35 @@ th {
     body{
         background-color:whitesmoke ;
     }
+} */
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    /* padding-bottom: 2px; */
+    border: 2px solid #F18701
+}
+
+.shape{
+    padding-top: 10px;
+    list-style: none;
+    padding-right: 65px;
+    font-size: 15px;
+}
+
+.list{
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    height: 200px;
+    padding-top: 20px;
+    margin: 17px;
+}
+
+.details{
+    display: inline-block;
 }

@@ -1,20 +1,20 @@
 import react from "react";
 import { Link } from "react-router-dom";
-import './Diamond.css'
+import '../Css/Diamond'
 
 
 
 const Diamond =({diamond})=>{
     return(
-        <section className="diamonds">
+        <div className="list">
              <Link to={`/diamonds/${diamond.id}`}>
             <h1 className="shape">{diamond.shape}</h1>
             </Link>
 
-            <img src={diamond.image} alt='diamonds'></img>
+            <img className= 'name'src={diamond.image} alt='diamonds'></img>
            
         
-        </section>
+        </div>
     )
 };
 

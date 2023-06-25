@@ -19,7 +19,7 @@ const Diamonds = () => {
     }, [])
 
     return (
-        <div className='diamonds'>
+        <div className='list' style={{paddingLeft: '50px'}}>
             {diamonds.map((diamond) => {
                 return ( <Diamond key={diamond.id} diamond={diamond} />)
                
