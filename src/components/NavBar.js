@@ -1,5 +1,8 @@
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
+// useMatch, useResolvedPath
+import '../Css/NavBar.css'
+
 
 // import Diamondlogo from '.../Assets/Diamondlogo'
 
@@ -7,8 +10,8 @@ import Show from "../pages/Show";
 
 const NavBar = () => {
     return (
-    
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style={{paddingBottom: '2px', paddingTop: '2px'}}>
+    //style={{paddingBottom: '2px', paddingTop: '2px'}}
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
             <div class="container px-4 px-lg-5" >
                 {/* <Link to='/' className='logo'><img src={logo} className='logo' style={{
                             height: '80px', width: '80px' }}/></Link> */}
@@ -35,19 +38,19 @@ const NavBar = () => {
     );
 };
 
-function CustomLink ({to, children, ...props}){
+// function CustomLink ({to, children, ...props}){
 
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname, end: true})
+//     const resolvedPath = useResolvedPath(to)
+//     const isActive = useMatch({path: resolvedPath.pathname, end: true})
     
     
-    return (
-        <li className={isActive? 'active': ''}>
-        <Link to={to} {...props}> 
-        {children}
-        </Link>
-        </li>
-    )
-}
+//     return (
+//         <li className={isActive? 'active': ''}>
+//         <Link to={to} {...props}> 
+//         {children}
+//         </Link>
+//         </li>
+//     )
+// }
 
 export default NavBar;
